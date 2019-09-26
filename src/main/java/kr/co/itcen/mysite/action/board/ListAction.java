@@ -20,13 +20,14 @@ public class ListAction implements Action {
 		
 		HttpSession session = request.getSession(true);
 		BoardDao dao = new BoardDao();
+		
 		int selPage=1;
 		
-		if(request.getParameter("selpage")!=null) {
+		if(request.getParameter("selpage")!= null) {
 			selPage = Integer.parseInt(request.getParameter("selpage"));
 		}
 		
-		System.out.println("sesese" + selPage);
+		System.out.println("sesese : " + selPage);
 		
 		String search = request.getParameter("search");
 		

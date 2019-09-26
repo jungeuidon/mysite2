@@ -61,16 +61,15 @@
 				<div class="pager">
 					<ul>
 						<c:forEach var="selpage" begin="1" end="${pageSu }" step="1" >
-						
-						<li>${selpage}</li>
+						<li><a href="${home }/board?a=list&selpage=${selpage}">${selpage}</a></li>
 						</c:forEach>
-						<li><a href="${home }/board?a=list&page=${page}">◀</a></li>
+						<!-- <li><a href="${home }/board?a=list&page=${page}">◀</a></li> 
 						<li><a href="">1</a></li>
 						<li class="selected">2</li>
 						<li><a href="">3</a></li>
 						<li>4</li>
 						<li>5</li>
-						<li><a href="">▶</a></li>
+						<li><a href="">▶</a></li>-->
 					</ul>
 				</div>					
 				<!-- pager 추가 -->
